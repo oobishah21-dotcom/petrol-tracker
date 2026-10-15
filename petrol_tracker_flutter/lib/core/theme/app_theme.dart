@@ -27,7 +27,7 @@ class AppTheme {
         outline: AppColors.outline,
         outlineVariant: AppColors.outlineVariant,
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.surfaceContainer,
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -35,7 +35,7 @@ class AppTheme {
           side: const BorderSide(color: Color(0x1AFFFFFF), width: 1),
         ),
       ),
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         backgroundColor: AppColors.surfaceContainer,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
