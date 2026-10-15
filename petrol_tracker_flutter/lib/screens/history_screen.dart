@@ -49,7 +49,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
             onPressed: () async {
               final path = await store.exportDataBackup();
               if (path != null && context.mounted) {
-                store.showToastMessage('✅ Backup exported successfully', false);
+                store.showToastMessage('✅ Backup exported successfully');
               }
             },
           ),

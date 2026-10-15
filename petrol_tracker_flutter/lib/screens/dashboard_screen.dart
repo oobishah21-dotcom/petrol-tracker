@@ -71,7 +71,7 @@ class DashboardScreen extends StatelessWidget {
             onPressed: () async {
               final path = await store.exportDataBackup();
               if (path != null && context.mounted) {
-                store.showToastMessage('✅ Backup created and ready to share', false);
+                store.showToastMessage('✅ Backup created and ready to share');
               }
             },
           ),

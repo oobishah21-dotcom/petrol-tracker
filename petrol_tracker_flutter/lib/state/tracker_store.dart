@@ -425,11 +425,11 @@ class TrackerStore extends ChangeNotifier {
     if (!reserveActive) {
       reserveActive = true;
       reserveStartDistance = totalKmSinceLastFill;
-      showToastMessage('⚠️ Switched to Reserve Fuel Mode', false);
+      showToastMessage('⚠️ Switched to Reserve Fuel Mode');
     } else {
       reserveActive = false;
       reserveStartDistance = 0.0;
-      showToastMessage('✅ Switched to Main Tank', false);
+      showToastMessage('✅ Switched to Main Tank');
     }
     _debouncedSave();
     notifyListeners();
@@ -591,7 +591,7 @@ class TrackerStore extends ChangeNotifier {
         trips.add(completedTrip);
         currentTrip = null;
         isTracking = false;
-        showToastMessage('⏸️ Personal Trip Stopped', false);
+        showToastMessage('⏸️ Personal Trip Stopped');
         notifyListeners();
         _saveCurrentState();
       }
@@ -772,7 +772,7 @@ class TrackerStore extends ChangeNotifier {
     fareResult = null;
 
     await _storageService.clearAll();
-    showToastMessage('✅ All data reset successfully!', false);
+    showToastMessage('✅ All data reset successfully!');
     activeScreen = 'dashboard';
     notifyListeners();
   }

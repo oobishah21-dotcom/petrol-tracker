@@ -53,7 +53,7 @@ class _RideTrackerScreenState extends State<RideTrackerScreen> {
             onPressed: () {
               AddRideModal.show(context, (km, earnings, tip) {
                 store.addManualRide(km: km, earnings: earnings, tip: tip);
-                store.showToastMessage('✅ Ride saved successfully!', false);
+                store.showToastMessage('✅ Ride saved successfully!');
               });
             },
           ),
@@ -182,7 +182,7 @@ class _RideTrackerScreenState extends State<RideTrackerScreen> {
                       onPressed: () {
                         AddRideModal.show(context, (km, earnings, tip) {
                           store.addManualRide(km: km, earnings: earnings, tip: tip);
-                          store.showToastMessage('✅ Ride saved!', false);
+                          store.showToastMessage('✅ Ride saved!');
                         });
                       },
                     ),

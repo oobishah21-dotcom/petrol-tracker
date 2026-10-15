@@ -53,7 +53,7 @@ class _FuelEntryScreenState extends State<FuelEntryScreen> {
       fallbackReserve: fallbackReserve,
     );
 
-    widget.store.showToastMessage('✅ Fuel refuel saved successfully!', false);
+    widget.store.showToastMessage('✅ Fuel refuel saved successfully!');
     widget.store.setActiveScreen('dashboard');
   }
 

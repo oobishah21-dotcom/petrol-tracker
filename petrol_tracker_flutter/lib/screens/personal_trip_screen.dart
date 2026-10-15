@@ -284,7 +284,7 @@ class PersonalTripScreen extends StatelessWidget {
                   onPressed: () {
                     AddReserveModal.show(context, (km) {
                       store.addManualReserve(km);
-                      store.showToastMessage('✅ $km km added to reserve', false);
+                      store.showToastMessage('✅ $km km added to reserve');
                     });
                   },
                 ),
@@ -302,7 +302,7 @@ class PersonalTripScreen extends StatelessWidget {
                   onPressed: () {
                     ManualKmModal.show(context, (km) {
                       store.addManualKm(km);
-                      store.showToastMessage('✅ $km km added manually', false);
+                      store.showToastMessage('✅ $km km added manually');
                     });
                   },
                 ),
